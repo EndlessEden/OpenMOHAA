@@ -1,4 +1,77 @@
-OpenMOHAA
-=========
+ / _ \ _ __   ___ _ __ |  \/  |/ _ \| | | |  / \      / \
+| | | | '_ \ / _ \ '_ \| |\/| | | | | |_| | / _ \    / _ \
+| |_| | |_) |  __/ | | | |  | | |_| |  _  |/ ___ \  / ___ \
+ \___/| .__/ \___|_| |_|_|  |_|\___/|_| |_/_/   \_\/_/   \_\
+      |_|
 
-Fork of OpenMOHAA(sourceforge.net - openmohaa)
+
+	 Kingtiger01 Fork: 
+	  
+Compiling
+=======================
+
+NOTE: Built binaries reside in the 'build' directory.
+
+Required Libraries: SDL(1.2/2), OpenAL and LibMAD.
+
+=||||||||||||| *NIX |||||||||||||=
+
+Autotools, use *nix Makefile.
+
+=|||||||||||||||||||||||||||||||||||||||=
+
+
+=||||||||||||| WINDOWS |||||||||||||=
+
++++++++++++++ Availible Methods ++++++++++++++
+MSVC, Mingw
++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+********MSVC
+
+MSVC solution files are in misc/msvc/ (VC9) and misc/msvc10 (VC10):
+Make sure to set include and library directories for your 
+
+********MingW
+Use Autotools/MakeFile OR run 'cross-make-mingw.sh'
+
+=|||||||||||||||||||||||||||||||||||||||=
+
+
+
+=||||||||||||| MacOSX / Darwin |||||||||||||=
+
+Run './make-macosx-ub.sh'
+
+=|||||||||||||||||||||||||||||||||||||||=
+
+
+Running
+=======================
+
+Copy all pak*.pk3 files and the sound/ directory from your MOHAA/main
+directory into openmohaa's 'main' directory.
+
+||||||||||||||||||\\\\\\\\\\\\\\\\\\\\\\||||||||||||||||||
+
+For further instructions:
+Please refer to ioquake3's README (README.ioq3).
+
+
+||||||||||||||||||//////////////////////||||||||||||||||||
+
+Developing
+=======================
+If you find bugs, or things not yet implemented, please use github issues.
+
+If you wish to get involved, Please fork and push any requests to github/kingtiger01/OpenMOHAA
+
+
+
+URL
+=======================
+Original-Project URL: http://openmohaa.sf.net/
+
+My Fork: http://github.com/kingtiger01/OpenMOHAA
+

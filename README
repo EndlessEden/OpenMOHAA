@@ -4,66 +4,74 @@
  \___/| .__/ \___|_| |_|_|  |_|\___/|_| |_/_/   \_\/_/   \_\
       |_|
 
-Running
-=======================
-a) extract archive to your MOHAA installation directory.
--or-
-b) Copy all pak*.pk3 files and the sound/ directory from your MOHAA/main
-directory into openmohaa's 'main' directory.
 
-Install Microsoft Visual C++ 2010 Redistributable from
-http://www.microsoft.com/download/en/details.aspx?id=5555
-
-Please report bugs to #openmohaa on freenet IRC.
-
+	 Kingtiger01 Fork: 
+	  
 Compiling
 =======================
-*NIX:
-make sure you have compiler + libraries installed
-Required extra libaries: libopenal-dev libsdl-dev libmad-dev
-Run 'make'
 
-WIN:
-You will need include files and libraries for OpenAL, SDL and libmad:
-=====
-SDL
-http://www.libsdl.org/ download Source code, compile
-=====
-OpenAL
-http://connect.creativelabs.com/openal/default.aspx download OpenAL soft source
-download CMake at http://www.cmake.org/cmake/resources/software.html
-run cmake on OpenAL, compile
-=====
-LibMAD
-http://www.underbit.com/products/mad/ download source code, compile
-=====
-MSVC solution files are in misc/msvc/ (VC9) and misc/msvc10 (VC10)
+NOTE: Built binaries reside in the 'build' directory.
 
-Open .sln file, set include and library directories for your SDL, OpenAL and LibMAD
-COMPILE!
+Required Libraries: SDL(1.2/2), OpenAL and LibMAD.
 
-Can also be compiled with mingw, just run 'make'.
+=||||||||||||| *NIX |||||||||||||=
 
-MOSX:
+Autotools, use *nix Makefile.
+
+=|||||||||||||||||||||||||||||||||||||||=
+
+
+=||||||||||||| WINDOWS |||||||||||||=
+
++++++++++++++ Availible Methods ++++++++++++++
+MSVC, Mingw
++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+********MSVC
+
+MSVC solution files are in misc/msvc/ (VC9) and misc/msvc10 (VC10):
+Make sure to set include and library directories for your 
+
+********MingW
+Use Autotools/MakeFile OR run 'cross-make-mingw.sh'
+
+=|||||||||||||||||||||||||||||||||||||||=
+
+
+
+=||||||||||||| MacOSX / Darwin |||||||||||||=
+
 Run './make-macosx-ub.sh'
-You will need openal, sdl and libmad.
 
-The built binaries reside in the 'build' directory.
+=|||||||||||||||||||||||||||||||||||||||=
 
 
+Running
+=======================
+
+Copy all pak*.pk3 files and the sound/ directory from your MOHAA/main
+directory into openmohaa's 'main' directory.
+
+||||||||||||||||||\\\\\\\\\\\\\\\\\\\\\\||||||||||||||||||
 
 For further instructions:
 Please refer to ioquake3's README (README.ioq3).
-Or get in touch with any of our developers (->forums/irc).
+
+
+||||||||||||||||||//////////////////////||||||||||||||||||
 
 Developing
 =======================
-You are always welcome in our irc channel and forums.
-If you find bugs, or things not yet implemented, please tell us or 
-if you can write a fix and submit it to us.
+If you find bugs, or things not yet implemented, please use github issues.
+
+If you wish to get involved, Please fork and push any requests to github/kingtiger01/OpenMOHAA
+
 
 
 URL
 =======================
-http://openmohaa.sf.net/
+Original-Project URL: http://openmohaa.sf.net/
+
+My Fork: http://github.com/kingtiger01/OpenMOHAA
 
