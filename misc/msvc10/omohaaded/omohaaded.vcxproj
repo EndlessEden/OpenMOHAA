@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{51E338B6-FF7D-45C6-893D-A6DA1CDC3C6E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>omohaaded</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\..\build\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\..\build\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;BOTLIB;DEDICATED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\wombat\code\openal-soft-1.13\include\AL;C:\Users\wombat\code\libmad-0.15.1b;C:\Users\wombat\code\SDL-1.2.14\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\wombat\code\libmad-0.15.1b\msvc++\Debug;C:\Users\wombat\code\openal-soft-1.13\Debug;C:\Users\wombat\code\SDL-1.2.14\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;opengl32.lib;winmm.lib;wsock32.lib;sdl.lib;sdlmain.lib;libmad.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;BOTLIB;DEDICATED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\wombat\code\openal-soft-1.13\include\AL;C:\Users\wombat\code\libmad-0.15.1b;C:\Users\wombat\code\SDL-1.2.14\include</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;C:\Users\wombat\code\libmad-0.15.1b\msvc++\Release;C:\Users\wombat\code\openal-soft-1.13\Release;C:\Users\wombat\code\SDL-1.2\VisualC\SDL\Release;C:\Users\wombat\code\SDL-1.2\VisualC\SDLmain\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;opengl32.lib;winmm.lib;wsock32.lib;sdl.lib;sdlmain.lib;libmad.lib;OpenAL32.lib;dxguid.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\code\botlib\be_aas_bspq3.c" />
+    <ClCompile Include="..\..\..\code\botlib\be_aas_cluster.c" />
+    <ClCompile Include="..\..\..\code\botlib\be_aas_debug.c" />
+    <ClCompile Include="..\..\..\code\botlib\be_aas_entity.c" />
+    <ClCompile Include="..\..\..\code\botlib\be_aas_file.c" />
+    <ClCompile Include="..\..\..\code\botlib\be_aas_main.c" />
+    <ClCompile Include="..\..\..\code\botlib\be_aas_move.c" />
+    <ClCompile Include="..\..\..\code\botlib\be_aas_optimize.c" />
+    <ClCompile Include="..\..\..\code\botlib\be_aas_reach.c" />
+    <ClCompile Include="..\..\..\code\botlib\be_aas_route.c" />
+    <ClCompile Include="..\..\..\code\botlib\be_aas_routealt.c" />
+    <ClCompile Include="..\..\..\code\botlib\be_aas_sample.c" />
+    <ClCompile Include="..\..\..\code\botlib\be_ai_char.c" />
+    <ClCompile Include="..\..\..\code\botlib\be_ai_chat.c" />
+    <ClCompile Include="..\..\..\code\botlib\be_ai_gen.c" />
+    <ClCompile Include="..\..\..\code\botlib\be_ai_goal.c" />
+    <ClCompile Include="..\..\..\code\botlib\be_ai_move.c" />
+    <ClCompile Include="..\..\..\code\botlib\be_ai_weap.c" />
+    <ClCompile Include="..\..\..\code\botlib\be_ai_weight.c" />
+    <ClCompile Include="..\..\..\code\botlib\be_ea.c" />
+    <ClCompile Include="..\..\..\code\botlib\be_interface.c" />
+    <ClCompile Include="..\..\..\code\botlib\l_crc.c" />
+    <ClCompile Include="..\..\..\code\botlib\l_libvar.c" />
+    <ClCompile Include="..\..\..\code\botlib\l_log.c" />
+    <ClCompile Include="..\..\..\code\botlib\l_memory.c" />
+    <ClCompile Include="..\..\..\code\botlib\l_precomp.c" />
+    <ClCompile Include="..\..\..\code\botlib\l_script.c" />
+    <ClCompile Include="..\..\..\code\botlib\l_struct.c" />
+    <ClCompile Include="..\..\..\code\null\null_client.c" />
+    <ClCompile Include="..\..\..\code\null\null_input.c" />
+    <ClCompile Include="..\..\..\code\null\null_snddma.c" />
+    <ClCompile Include="..\..\..\code\qcommon\cmd.c" />
+    <ClCompile Include="..\..\..\code\qcommon\cm_load.c" />
+    <ClCompile Include="..\..\..\code\qcommon\cm_patch.c" />
+    <ClCompile Include="..\..\..\code\qcommon\cm_polylib.c" />
+    <ClCompile Include="..\..\..\code\qcommon\cm_terrain.c" />
+    <ClCompile Include="..\..\..\code\qcommon\cm_test.c" />
+    <ClCompile Include="..\..\..\code\qcommon\cm_trace.c" />
+    <ClCompile Include="..\..\..\code\qcommon\common.c" />
+    <ClCompile Include="..\..\..\code\qcommon\cvar.c" />
+    <ClCompile Include="..\..\..\code\qcommon\files.c" />
+    <ClCompile Include="..\..\..\code\qcommon\huffman.c" />
+    <ClCompile Include="..\..\..\code\qcommon\md4.c" />
+    <ClCompile Include="..\..\..\code\qcommon\msg.c" />
+    <ClCompile Include="..\..\..\code\qcommon\net_chan.c" />
+    <ClCompile Include="..\..\..\code\qcommon\net_ip.c" />
+    <ClCompile Include="..\..\..\code\qcommon\q_math.c" />
+    <ClCompile Include="..\..\..\code\qcommon\q_shared.c" />
+    <ClCompile Include="..\..\..\code\qcommon\tiki.c" />
+    <ClCompile Include="..\..\..\code\qcommon\unzip.c" />
+    <ClCompile Include="..\..\..\code\qcommon\vm.c" />
+    <ClCompile Include="..\..\..\code\qcommon\vm_interpreted.c" />
+    <ClCompile Include="..\..\..\code\qcommon\vm_x86.c" />
+    <ClCompile Include="..\..\..\code\server\sv_bot.c" />
+    <ClCompile Include="..\..\..\code\server\sv_ccmds.c" />
+    <ClCompile Include="..\..\..\code\server\sv_client.c" />
+    <ClCompile Include="..\..\..\code\server\sv_game.c" />
+    <ClCompile Include="..\..\..\code\server\sv_init.c" />
+    <ClCompile Include="..\..\..\code\server\sv_main.c" />
+    <ClCompile Include="..\..\..\code\server\sv_net_chan.c" />
+    <ClCompile Include="..\..\..\code\server\sv_snapshot.c" />
+    <ClCompile Include="..\..\..\code\server\sv_world.c" />
+    <ClCompile Include="..\..\..\code\sys\con_log.c" />
+    <ClCompile Include="..\..\..\code\sys\con_win32.c" />
+    <ClCompile Include="..\..\..\code\sys\sys_main.c" />
+    <ClCompile Include="..\..\..\code\sys\sys_win32.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\code\asm\ftola.s" />
+    <None Include="..\..\..\code\asm\matha.s" />
+    <None Include="..\..\..\code\asm\snapvectora.s" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\code\sys\win_resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
